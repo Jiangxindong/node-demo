@@ -32,7 +32,7 @@ readerStream.on('error', function (err) {
 var dataTOWrite = "this is the string being written"
 
 // create a writable stream to write to the file named output.txt
-var writerStream = fs.createWriteStream('output.txt');
+var writerStream = fs.createWriteStream('/public/output.txt');
 
 // use utf-8 encoding to write the data
 writerStream.write(dataTOWrite,'utf-8');
